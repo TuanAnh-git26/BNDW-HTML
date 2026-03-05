@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .logo img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .logo-footer{
+            display: flex;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: blue;
+        }
+        .logo-footer img{
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .menu-bar {
+            padding: 10px 10px;
+        }
+
+        .menu-bar ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .menu-bar ul a {
+            text-decoration: none;
+        }
+
+        .menu-bar ul a:hover {
+            color: cyan;
+        }
+
+        .main-content {
+            height: 400px;
+        }
+
+        .main-content::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .main-contents {
+            width: 50%;
+        }
+
+        .navigation-bar {
+            padding: 0 10px;
+            width: 25%;
+            float: left;
+        }
+
+        .navigation-bar ul {
+            list-style: none;
+        }
+
+        .navigation-bar ul li {
+            margin: 10px 5px;
+        }
+
+        .navigation-bar input {
+            border: 1px solid darkgrey;
+            width: 90%;
+            height: 30px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .content {
+            width: 50%;
+            float: left;
+            display: flex;
+            gap: 10px;
+        }
+
+        .content .product-item {
+            width: 30%;
+            border: 1px solid darkgrey;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .content .product-item img {
+            width: 100%;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+
+        .product-item .product-title {
+            font-size: 14px;
+
+            margin: 3px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 3px; }
+
+        .star {
+            color: #fab914;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            height: 30px;
+            background-color: #fafafa
+        }
+    </style>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo2.png" alt="">NetFilm
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li>
+                    <form action="" name="search-form">
+                        <input type="text" name="keyword" placeholder="Enter keyword to search">
+                    </form>
+                </li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-contents">
+            <video controls>
+                <source src="video/thepost.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+            <div class="content">
+                <div class="product-item">
+                    <img class="product-thumb" src="img/thepost.jpg" alt="">
+                    <div class="product-title">The post</div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img class="product-thumb" src="img/Thegodfather.jpg" alt="">
+                    <div class="product-title">The Godfather</div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img class="product-thumb" src="img/titanic.jpg" alt="">
+                    <div class="product-title">Titanic</div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img class="product-thumb" src="img/lions.jpg" alt="">
+                    <div class="product-title">Lions</div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img class="product-thumb" src="img/avarta.jpg" alt="">
+                    <div class="product-title">Avatar</div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img class="product-thumb" src="img/parasite.jpg" alt="">
+                    <div class="product-title">Parasite</div>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="navigation-bar">
+                    <ul type="checkbox">
+
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Documentary</a></li>
+                        <li><a href="#">War</a></li>
+                        <li style="margin-top:16px"><a href="#">Sport</a></li>
+                        <li><a href="#">Musical</a></li>
+                        <li><a href="#">Family</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        <footer class="footer">
+            <div class="logo-footer">
+                <img src="img/logo2.png" alt="">Blue Entertainment
+            </div>
+        </footer>
+    </body>
+</html>
